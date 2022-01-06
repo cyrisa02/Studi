@@ -1,0 +1,33 @@
+*,::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* les 9 premières lignes sont un reset */
+
+.container {
+    height: 100vh;
+    overflow-y: scroll; /*on peut scroller dans ce container*/
+    scroll-snap-type: y mandatory;
+    /* width: 300px; */
+}
+
+.v-slider-bloc{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #333;
+    height: 100vh;
+    scroll-snap-align: center;
+} 
+
+.v-slider-bloc:nth-child(1){background-color: yellow;}
+.v-slider-bloc:nth-child(2){background-color: blue;}
+.v-slider-bloc:nth-child(3){background-color: rgb(199, 75, 17);}
+.v-slider-bloc:nth-child(4){background-color: rgb(35, 15, 153);}
