@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>Slick</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <!-- dans le fichier index.js il y a le programme Premier carrousel :
+    3 images de votre choix avec défilement manuel, Flèches de défilement affichées,
+    Points en bas affichés, Possibilité de drag avec la souris,
+    Un slide visible à la fois,Les slides défilent un à un,
+    La div container du slider a une bordure blanche.
+
+Deuxième carrousel : 6 éléments textuels de votre choix,
+    Défilement vertical automatique (200 ms), Drag avec la souris désactivé,
+    5 slides visibles à la fois,Les slides défilent un à un,
+    Pas de points ni de flèches de défilement, Les textes sont centrés horizontalement,
+    L'élément affiché en cours (sur l'image « Élément 2 ») est plus foncé que les autres. -->
+
+  <style type="text/css">
+    body {
+      background-color: pink;
+    }
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+        height: 200px;
+        background-color: white;
+    }
+    .slider div {
+      text-align: center;
+    }
+    .slick-dots {
+      bottom: -50px;
+    }
+    .slick-prev {
+      left: -50px;
+    }
+    .slick-next {
+      right: -50px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: grey;
+    }
+    .un {
+      height: 440px;
+      border: 15px solid white;
+    }
+    .deux .slick-slide {
+      opacity: .2;
+    }
+    .deux .slick-current {
+      opacity: 1;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="slider un">
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
+    <img src="https://pbs.twimg.com/media/DfkhrO1XUAEYkdw?format=jpg&name=small" />
+    <img src="https://bdomagazine.files.wordpress.com/2019/10/lelivredimage.jpg" />
+  </div>
+  <div class="slider deux">
+    <div>Élément 1</div>
+    <div>Élément 2</div>
+    <div>Élément 3</div>
+    <div>Élément 4</div>
+    <div>Élément 5</div>
+    <div>Élément 6</div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
