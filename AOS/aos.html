@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animation au scroll - Exercice 2</title>
+    <!-- 1/ Ligne à insérer -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            width: 500px;
+            background-color: #4b3174;
+            color: #fff;
+            margin: 50px auto;
+            }
+    </style>
+  </head>
+  <body>
+    <div>
+        <div class="content animation" data-aos="flip-down" data-aos-duration="3000">
+          Bonjour
+        </div>
+        <div class="content animation" data-aos="flip-up" data-aos-duration="3000">
+          voici
+        </div>
+        <div class="content animation" data-aos="fade-up">
+          venir
+        </div>
+        <div class="content animation" data-aos="zoom-out" data-aos-duration="2000">
+          une
+        </div>
+        <div class="content animation" data-aos="zoom-in">
+          animation
+        </div>
+        <div class="content animation" data-aos="fade-left">
+          au
+        </div>
+        <div class="content animation" data-aos="flip-down">
+          scroll
+        </div>
+      </div>
+  </body>
+  <!-- 2/ Ligne à insérer  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+
+</html>
