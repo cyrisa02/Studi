@@ -45,10 +45,13 @@
             <li>Création d'un dossier services</li>
             <li>création d'un fichier .js -> openweathermap.js</li>
             <li>création de la fonction qui retourne les données (météo dans notre cas)</li>
-            <li>appel de cette fonction dans le composant App</li>
+            <li>appel de cette fonction dans le composant App à l'aide d'un hook</li>
             <li>binde des données</li>
         </ol>
-        <h2>6/ Résultats</h2>
+        <p>Pour connecter le client Axios d'API, nous pouvons le connecter avec un hook appelé created. Un hook est une fonction qui se déclenche lors d'évenements précis. Dans notre cas à l'affichage de l'application. Puisque nous avons utilisé les props dans le dernier cas, nous devons utiliser ce hook dans App (le parent).</p>
+
+        <h2>7/ Pour déployer l'appli, faire npm install puis npm run build</h2>
+        <h2>8/ Résultats</h2>
   </div>
 </template>
 
