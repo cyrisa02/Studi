@@ -2,6 +2,7 @@
   <div id="app">
     <message />
     <meteo-details />
+    <!-- Pour lancer l'app sur un navigateur npm run serve-->
     <!-- Binde :ville="meteo_data.ville", c'est long donc on peut faire avec v-bind qui bind l'ensemble de l'objet -->
     <meteo-props :ville="meteo_data.ville" />
 
@@ -32,8 +33,11 @@ import MeteoDetails from "./components/MeteoDetails.vue";
 import MeteoProps from "./components/MeteoProps.vue";
 // Utilisation de Axios et de la fonction js
 
-//import api from "@/service/openweathermap";
+//import api from "@/services/openweathermap";
 // PROBLEME cet import ne fonctionne pas!!!!!!
+
+// Meilleure réponse https://dev.to/fabiorosado/weather-app-using-vue-and-axios-4ia6
+
 import MeteoApi from "./components/MeteoApi.vue";
 
 export default {

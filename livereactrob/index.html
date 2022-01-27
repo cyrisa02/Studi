@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <div id="root"></div>
+
+    <!-- https://fr.reactjs.org/docs/cdn-links.html -->
+    <!-- Ce lein permet d'avoir REACT en cdn -->
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<script type="module">
+    const rootElement = document.getElementById("root");
+
+    const element = document.createElement("div");
+
+    element.textContent = "Hello World";
+    element.className = "container";
+
+    rootElement.append(element); // renvoie l'élement dans la div root puisque rootElement c'est root, c'est comme render dans react
+
+
+</script>
+</body>
+</html>

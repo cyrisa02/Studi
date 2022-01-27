@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <div id="root"></div>
+
+    <!-- https://fr.reactjs.org/docs/cdn-links.html -->
+    <!-- Ce lein permet d'avoir REACT en cdn -->
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+      const rootElement = document.getElementById("root");
+
+      const children = "Hello World, Babel transforme le jsx en js pour le DOM, ça évite la méthode create.element et c'est plus facile";
+      const className = "container";
+      const props = { children, className };
+
+      const element = <div {...props} />; /// les ... sont timportants ils éclatent les props en children et className
+
+      // const element = document.createElement("div");
+
+      // element.textContent = "Hello World";
+      // element.className = "container";
+
+      ReactDOM.render(element, rootElement); //affiche le contenu
+
+      // rootElement.append(element); // renvoie l'élement dans la div root puisque rootElement c'est root, c'est comme render dans react
+    </script>
+  </body>
+</html>

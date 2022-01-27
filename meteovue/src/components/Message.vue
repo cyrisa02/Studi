@@ -49,9 +49,13 @@
             <li>binde des données</li>
         </ol>
         <p>Pour connecter le client Axios d'API, nous pouvons le connecter avec un hook appelé created. Un hook est une fonction qui se déclenche lors d'évenements précis. Dans notre cas à l'affichage de l'application. Puisque nous avons utilisé les props dans le dernier cas, nous devons utiliser ce hook dans App (le parent).</p>
-
-        <h2>7/ Pour déployer l'appli, faire npm install puis npm run build</h2>
-        <h2>8/ Résultats</h2>
+        <h2>7/ Installation de vue-router et vuex</h2>
+        <p> vue-router permet de gérer les modifications des URL en fonction des modifications de la page. Pour rappel il n'y a pas de rechargement, donc l'URL du site ne devrait pas se modifer, ce qui peut être génant.</p>
+        <p>vuex permet de mémoriser un state qui serait utilisé dans plusieurs composants comme pour un login</p>
+        <h2>8/ Pour déployer l'appli</h2>
+        <p>Faire npm install puis npm run build</p>
+        <p>On obtient un dossier "dist", l'installer sur un serveur</p>
+        <h2>9/ Résultats</h2>
   </div>
 </template>
 
