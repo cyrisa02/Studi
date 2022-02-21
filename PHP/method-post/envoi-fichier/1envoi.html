@@ -1,0 +1,12 @@
+<body>
+    <form method="post" action="envoi.php" enctype="multipart/form-data">
+      <label for="lastname">Lastname :</label>
+      <input type="text" id="lastname" name="lastname" value="" /><br />
+      <label for="cni">Upload ID Card :</label>
+      <input type="file" id="cni" name="cni" />
+      <button type="submit">Envoyer</button>
+    </form>
+    <p>avec la fonction uniqid on a des noms de fichier unique ce qui évite que les utilisateurs écrasent leur fichier parce qu'ils on tle même nom, mais on perd l'extension</p>
+    <p>pathinfo permet de récupérer l'extension</p>
+    <p>on peut faire un var dump de $filename et on verra qu'il y a extension dans le tableau</p>
+  </body>
