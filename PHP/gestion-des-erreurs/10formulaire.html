@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <p>Vous disposez du formulaire de création d'un utilisateur, ainsi que de son script de traitement. Actuellement, ce script permet de créer un objet "utilisateur" à partir des données saisies dans le formulaire.
+
+        Ces données ne sont pas vérifiées, on considère que la personne qui remplit le formulaire est bienveillante et qu'elle connaît toute les règles de gestion qui font un bon utilisateur.
+        
+        Vous allez devoir remettre cette confiance en question et implémenter les vérifications adéquates au niveau du traitement du formulaire.
+        
+        À terme, l'un de vos collègues sera chargé d'implémenter certaines vérifications côté HTML, mais là n'est pas le sujet.</p>
+<h2>Question</h2>
+
+<p>
+
+    La création d'un utilisateur doit dépendre d'un certain nombre de règles de gestion. Vous êtes chargé de vérifier ces données côté PHP.
+    
+    Ainsi :
+    
+        Le nom d'un utilisateur ne peut contenir plus de 20 caractères
+    
+        Ce nom ne doit contenir que des lettres
+    
+        La date de naissance doit être une date valide
+    
+        L'utilisateur doit être majeur, ainsi il doit avoir au moins 18 ans
+    
+        Son mot de passe ne peut contenir que des chiffres et des lettres
+    
+        Un mot de passe doit avoir au moins 6 caractères
+    
+        L'e-mail doit être au bon format
+    
+        Un commentaire ne peut contenir plus de 200 caractères
+    
+    Une Exception devra être levée dès lors que l'une de ces conditions n'est pas respectée.
+    
+    Chacune des propriétés est définie grâce à son setter. C'est là que vous effectuerez ces vérifications. Vous définirez les exceptions que vous jugerez nécessaires.</p>
+
+    <form method="post" action="10formulaire.php">
+        <fieldset>
+            <legend>Création de votre compte</legend>
+            <label for="name">Nom d'utilisateur</label>
+            <p class="help-text">
+                Le nom d'un utilisateur ne peut contenir plus de 20 caractères et ne doit contenir que des lettres.
+            </p>
+            <input type="text" name="name" id="name" required placeholder="Saisissez votre nom">
+
+            <label for="email">Adresse e-mail</label>
+            <p class="help-text">Il doit s'agir d'un e-mail valide</p>
+            <input type="text" name="email" id="email" required placeholder="Saisissez votre email">
+
+            <label for="password">Votre mot de passe</label>
+            <p class="help-text">
+                Le mot de passe ne peut contenir que des chiffres et des lettres. Il doit disposer d'au moins 6
+                caractères.
+            </p>
+            <input type="password" name="password" id="password" required placeholder="Saisissez votre mot de passe">
+
+            <label for="birthDate">Votre date de naissance</label>
+            <p class="help-text">
+                L'utilisateur doit être une personne majeure
+            </p>
+            <input type="date" name="birthDate" id="birthDate" required placeholder="Saisissez votre date de naissance">
+
+            <label for="comment">Commentaire</label>
+            <p class="help-text">
+                Le commentaire ne peut excéder plus de 200 caractères
+            </p>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+            <button type="submit">Soumettre le formulaire</button>
+        </fieldset>
+    </form>
+</body>
+<style>
+    /**
+       Attention, ce CSS est là uniquement pour rendre le formulaire "agréable" à la lecture sans que vous n'ayez
+       à récupérer deux fichiers distincts.
+       Dans un cas d'usage "réel", ces éléments doivent être externalisés
+        */
+    body {
+        font-family: Calibri, serif;
+    }
+
+    form {
+        max-width: 50%;
+    }
+
+    form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    fieldset {
+        border: 1px solid lightgray;
+        background-color: rgba(225, 233, 255, 0.25);
+    }
+
+    legend {
+        font-style: italic;
+        font-size: 1.1em;
+        padding: 5px;
+    }
+
+    form input,
+    form textarea {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    button[type=submit] {
+        padding: 10px;
+        margin-top: 15px;
+        width: auto;
+    }
+
+    .help-text {
+        color: #2b2b2b;
+        font-size: 12px;
+    }
+</style>
+
+</html>
