@@ -1,0 +1,51 @@
+Reprenons le code de notre book en ligne. L'objectif est de présenter les différentes séries photographiques réalisées. Une photographie appartient à une seule série.
+
+Pour cela, créons la nouvelle table série.
+
+Table : serie
+
+Nom de la colonne
+	
+
+Type
+	
+
+Null
+	
+
+Extra
+
+id
+	
+
+INT(11)
+	
+
+Non
+	
+
+AUTO_INCREMENT
+
+titre
+	
+
+VARCHAR(100)
+	
+
+Non
+	
+
+description
+	
+
+TEXT
+	
+
+Non
+	
+
+Ensuite, il est nécessaire de créer une nouvelle page qui liste l'ensemble des séries et d'ajouter un lien dans le menu du site.
+
+La page d'affichage des séries doit présenter le titre de la série dans une balise <h2> et sa description.
+
+Bien sûr, le tout en respectant l’architecture MVC.

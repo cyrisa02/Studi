@@ -1,0 +1,29 @@
+Continuez à segmenter votre code en ajoutant la possibilité de voir le détail d'un article. Pour cela, vous aurez besoin de :
+
+    un contrôleur frontal index.php
+
+    un contrôleur controllers/Controller.php pour voir un article et lister des articles
+
+    un trait générique models/Model.php contenant l'accès à la base de données
+
+    deux modèles models/Posts.php et models/Post.php pour récupérer respectivement une liste d'articles et un unique article
+
+    deux templates views/posts-list.php et views/post-show.php pour afficher respectivement une liste d'articles et un unique article
+
+    un template global views/layout.php contenant l'ossature de vos pages HTML
+
+
+    Schéma
+
+        L'internaute demande la consultation d'une page web via une requête HTTP.
+
+    Le contrôleur réceptionne la demande et interroge le modèle pour obtenir les données nécessaires.
+
+    Le contrôleur récupère les données issues du modèle.
+
+    Le contrôleur appelle la vue correspondante en lui fournissant les données préalablement obtenues.
+
+    La vue retourne le résultat formaté au contrôleur.
+
+    Le contrôleur répond à l'internaute en lui fournissant le résultat correspondant à sa demande.
+
