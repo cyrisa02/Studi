@@ -1,0 +1,17 @@
+Pour les besoins d'un site de vente en ligne, vous êtes chargé de mettre en place un système permettant d'informer un client que sa commande a été expédiée.
+
+Le code ci-dessous implémente la classe Client et vous fournit une liste de clients que vous devrez contacter.
+
+Un client est toujours contacté selon son moyen de contact favori, représenté par la propriété $contactWith.
+
+Selon celui-ci, la méthode getContactInformation() permet de retourner son numéro de téléphone ou son adresse e-mail.
+
+voir 1Client.php
+
+Chacun des clients de la liste dont vous disposez doit être informé par une notification selon son moyen de contact favori.
+
+À ce jour, un client peut être notifié par e-mail ou par SMS, mais la société envisage, à terme, de prendre contact avec ses clients au moyen de messageries instantanées. Le système que vous allez implémenter devra prendre en compte cette contrainte d'évolutivité.
+
+Selon le script et les informations dont vous disposez, implémentez les classes nécessaires à la gestion de ces notifications, ainsi que le script permettant leur envoi.
+
+Par simplification, on considérera que l'envoi d'une notification consistera à indiquer "%type de notification% de confirmation envoyé à %moyen contact% ".

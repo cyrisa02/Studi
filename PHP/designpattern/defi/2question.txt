@@ -1,0 +1,7 @@
+Reprenez le code présent dans la solution ci-dessus.
+
+Lorsqu'une notification de type SMS est envoyée, nous souhaitons être informés du fait que celui-ci a bien été remis à son destinataire.
+
+Implémentez la structure nécessaire à la mise en œuvre de ce système. Une méthode setReceived(bool $isReceived) permettra de déclencher un changement d'état de cet objet.
+
+Par simplification, on appellera la méthode sous cette forme $this->setReceived((bool) rand(0, 1)); au sein de la méthode send de l'objet représentant la notification SMS.

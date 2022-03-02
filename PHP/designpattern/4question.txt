@@ -1,0 +1,19 @@
+Créez 3 classes représentant les animaux suivants : Cat / Dog / Horse.
+
+Ces classes implémenteront l'interface suivante afin de retourner le nom du cri de chaque animal.
+
+<?php
+
+interface AnimalInterface
+{
+    public function getSoundType(): string;
+}
+
+Mettez en place une classe supplémentaire AnimalFactory implémentant le pattern Factory et permettant d'instancier et de retourner, pour un type d'animal donné, l'objet correspondant grâce à une méthode load.
+
+Si l'on essaie d'instancier un type d'animal n'ayant pas été défini, une erreur sera déclenchée et sera correctement interprétée.
+
+Voici les types d'animaux que vous devrez vérifier :
+
+
+$animalTypes = ['horse', 'dog', 'mice', 'cat', 'lion'];
